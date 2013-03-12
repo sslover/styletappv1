@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddClothing" >
+
+	    <Button
+	        android:id="@+id/ButtonAddClothing"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/EditCaption"
+	        android:layout_alignParentBottom="true"
+	        android:onClick="addClothing"
+	        android:text="@string/addclothingbutton" />
+
+	    <Spinner
+	        android:id="@+id/SpinnerClothingType"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/ButtonAddClothing"
+	        android:layout_alignLeft="@+id/ButtonAddClothing"
+	        android:layout_marginBottom="28dp"
+	        android:entries="@array/clothingtypelist"
+	        android:hint="@string/clothingtype" />
+
+	    <EditText
+	        android:id="@+id/EditBrand"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/SpinnerClothingType"
+	        android:layout_alignLeft="@+id/SpinnerClothingType"
+	        android:layout_marginBottom="20dp"
+	        android:ems="10"
+	        android:hint="@string/brand"
+	        android:inputType="textMultiLine"
+	        android:lines="1" 
+	    />
+
+	    <EditText
+	        android:id="@+id/EditName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/EditBrand"
+	        android:layout_alignLeft="@+id/EditBrand"
+	        android:layout_marginBottom="28dp"
+	        android:ems="10"
+	        android:hint="@string/name"
+	        android:inputType="textMultiLine"
+	        android:lines="1" 
+	         />
+
+	    <EditText
+	        android:id="@+id/EditCaption"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_below="@+id/imageView1"
+	        android:layout_marginBottom="0dp"
+	        android:ems="10"
+	        android:hint="@string/caption"
+	        android:inputType="textMultiLine"
+	        android:lines="3" />
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="21dp"
+	        android:src="@drawable/ic_launcher" />
+	    
+    </RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="clothingtypelist">  
+        <item>@string/clothingtype1</item>  
+        <item>@string/clothingtype2</item>  
+        <item>@string/clothingtype3</item>  
+        <item>@string/clothingtype4</item> 
+        <item>@string/clothingtype5</item> 
+        <item>@string/clothingtype6</item>  
+    </string-array> 
+</resources>
